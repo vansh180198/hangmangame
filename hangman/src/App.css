@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.title-container{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+ 
+}
+
+/* Main Container */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+.img-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+img{
+  border-radius:5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.row-word {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.word-alphabet {
+  font-size: 32px;
+  margin: 0 5px;
+  font-weight: bold;
+  padding: 5px;
+  min-width: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Alphabet Buttons */
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cell {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px ;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.joke{
+  background-color:#d3d3d3;
+  padding:5px;
+  border-radius:10%;
+}
+
+.cell:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.cell:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Reset Button */
+.reset {
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.reset:hover {
+  background-color: #e5533e;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .row-word {
+    flex-wrap: wrap;
+  }
+
+  .word-alphabet {
+    font-size: 24px;
+  }
+
+  .cell {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .reset {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
